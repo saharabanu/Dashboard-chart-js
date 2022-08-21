@@ -1,7 +1,38 @@
-const btn = document.getElementById('btn');
+const chart = document.querySelector("#chart").getContext("2d");
+console.log(chart, "djhjdsgg")
 
+// create a new chart instance 
 
-btn.addEventListener('click',()=>{
-    btn.innerHTML= "jdfjgvbvdjbd"
+new Chart(chart, {
+    type:'line',
+    data:{
+        labels:["Jan","Feb","Mar","jApr","May","June","July","Aug","Sep","Oct","Nov"],
+
+        datasets:[
+            {
+                label:"BTC",
+                data:[978568,465748,765487,34345,686754,87989,56346,314235,567993,989675,546758],
+                borderColor:"red",
+                borderWidth:2
+            },
+            {
+                label:"ETH",
+                data:[999967,35465,77897,242,41,24353,879879,76980,456557,889853,485634,6870980],
+                borderColor:"blue",
+                borderWidth:2
+            },
+        ]
+    },
+    options:{
+        responsive:true,
+        // plugins: {
+        //     legend: {
+        //       position: 'top',
+        //     },
+        //     title: {
+        //       display: true,
+        //       text: 'Chart.js Line Chart'
+        //     }
+        //   }
+    }
 })
-
