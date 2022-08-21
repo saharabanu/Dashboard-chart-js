@@ -686,7 +686,9 @@ main .recent-transactions .card-details .card{
   nav .profile-area{
     gap:2.6rem;
   }
-  nav .profile h5,
+  nav .profile h5 {
+    display: none;
+  }
   nav .profile span{
     display: none;
   }

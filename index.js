@@ -1,5 +1,5 @@
 const chart = document.querySelector("#chart").getContext("2d");
-console.log(chart, "djhjdsgg")
+// console.log(chart, "djhjdsgg")
 
 // create a new chart instance 
 
@@ -42,13 +42,13 @@ new Chart(chart, {
 
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
-const sidebarBtn = document.querySelector("#sidebar");
+const sidebar = document.querySelector("aside");
 
 menuBtn.addEventListener("click",()=>{
-    sidebarBtn.style.display ="black"
+    sidebar.style.display ="block"
 })
 closeBtn.addEventListener("click",()=>{
-    sidebarBtn.style.display= "none"
+    sidebar.style.display= "none"
 })
 
 
