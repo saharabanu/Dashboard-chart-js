@@ -35,4 +35,28 @@ new Chart(chart, {
         //     }
         //   }
     }
+});
+
+
+
+
+const menuBtn = document.querySelector("#menu-btn");
+const closeBtn = document.querySelector("#close-btn");
+const sidebarBtn = document.querySelector("#sidebar");
+
+menuBtn.addEventListener("click",()=>{
+    sidebarBtn.style.display ="black"
+})
+closeBtn.addEventListener("click",()=>{
+    sidebarBtn.style.display= "none"
+})
+
+
+// change  theme 
+
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", ()=>{
+    document.body.classList.toggle("dark-theme");
+    themeBtn.querySelector("span:last-child").classList.toggle("active");
 })
